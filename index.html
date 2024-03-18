@@ -3,85 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irene Mariam Thomas - Product Documentation Specialist</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Irene Mariam Thomas - Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #A0AECD, #000000); /* Updated color combination */
+            color: #000000; /* Updated font color */
+            height: 100%;
+            overflow-y: auto; /* Add scrollbar outside flexbox */
+        }
+        .container {
+            width: 90%; /* Increased width */
+            max-width: 1200px; /* Added max-width */
+            margin: auto; /* Center align */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .sidebar {
+            background-color: #A0AECD; /* Updated color */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            width: 20%; /* Sidebar width */
+            margin-right: 20px; /* Space between sidebar and content */
+        }
+        .sidebar h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #000000; /* Updated font color */
+        }
+        .sidebar h3 i {
+            margin-right: 10px;
+        }
+        .content {
+            width: 80%; /* Content width */
+            background-color: #A0AECD; /* Updated color */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+        .content h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #000000; /* Updated font color */
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .content h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #000000; /* Updated font color */
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 25px; /* Increased padding */
+            margin: 0 20px; /* Increased margin */
+            border-radius: 5px;
+            background-color: #A0AECD; /* Updated color */
+            transition: all 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            background-color: #6B1D59; /* Darker shade for hover */
+        }
+        .about-me {
+            margin-top: 20px; /* Reduced margin */
+            padding: 10px; /* Reduced padding */
+            background-color: #A0AECD; /* Updated color */
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Added shadow */
+            text-align: left;
+            width: 100%; /* Adjusted width */
+        }
+        .about-me h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .about-me h2 i {
+            margin-right: 10px;
+        }
+        .linkedin {
+            margin-top: 20px; /* Adjusted margin */
+            margin-bottom: 20px;
+        }
+        .linkedin a {
+            text-decoration: none;
+            color: #000000; /* Updated font color */
+            padding: 10px 25px; /* Increased padding */
+            margin: 0 20px; /* Increased margin */
+            border-radius: 5px;
+            background-color: #A0AECD; /* Updated color */
+            transition: all 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .linkedin a:hover {
+            background-color: #6B1D59; /* Darker shade for hover */
+            color: #fff;
+        }
+        .about-me p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #000000; /* Updated font color */
+            margin: 0;
+        }
+        .linkedin-btn {
+            background-color: #A0AECD; /* Updated color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #000000; /* Updated font color */
+        }
+        .linkedin-btn i {
+            margin-right: 5px;
+        }
+        .linkedin-btn:hover {
+            background-color: #6B1D59; /* Darker shade for hover */
+            color: #fff;
+        }
+        .event-container {
+            max-height: 400px; /* Increased height */
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        .event {
+            padding: 10px 20px;
+            background-color: #A0AECD; /* Updated color */
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .event h3 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .event h3 i {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="container">
+        <div class="sidebar">
+            <h3><i class="fas fa-envelope"></i> Email: irenemariam70@gmail.com</h3>
+            <h3><i class="fas fa-map-marker-alt"></i> Address: Bengaluru, India</h3>
+            <h3><i class="fas fa-briefcase"></i> Product Documentation Specialist, Wisetech Global India Pvt Ltd</h3>
+        </div>
+        <div class="content">
+            <a href="#" class="bookmark">Professional Portfolio</a>
             <h1>Irene Mariam Thomas</h1>
-            <p>Product Documentation Specialist</p>
+            <h3>Technical Writer in the Supply Chain Domain</h3>
+            <div class="nav">
+                <a href="#"> <i class="fas fa-file-alt"></i> Resume</a>
+                <a href="#"> <i class="fas fa-address-book"></i> Contact</a>
+                <a href="#"> <i class="fas fa-file-alt"></i> Sample Documentation</a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/irene-mariam-thomas-714716208/" class="linkedin-btn"> <i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <div class="about-me">
+                <h2><i class="fas fa-pen-nib"></i> About Me</h2> <!-- Added writer icon -->
+                <p>Hey! I'm Irene Mariam Thomas, a Technical Writer in the Supply Chain Domain. Feel free to connect or take a look at my work if you want to know more about me. Thank You!!</p>
+            </div>
+            <div class="timeline">
+                <h2>My Career Timeline</h2>
+                <div class="event-container">
+                    <div class="event">
+                        <h3><i class="fas fa-user-graduate"></i> 2024, March</h3>
+                        <p>Promoted as Technical Documentation Analyst at Blume Global.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-user-graduate"></i> 2022, July</h3>
+                        <p>Joined Blume Global as Associate Technical Documentation Analyst.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-user-graduate"></i> 2022, June</h3>
+                        <p>Graduated from Mount Carmel College Autonomous, Bengaluru for Master of Arts in English Literature.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-briefcase"></i> 2021, October</h3>
+                        <p>Interned with Famezop Media as Content Executive.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-briefcase"></i> 2021, April - June</h3>
+                        <p>Interned with START UP MIND as Content Writer Intern.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-briefcase"></i> 2021, March - April</h3>
+                        <p>Interned with International MUN as Campus Ambassador.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-user-graduate"></i> 2020, March</h3>
+                        <p>Graduated Bachelor of Arts in English Literature, Communication and Journalism from Assumption College Autonomous, Changanacherry.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-newspaper"></i> 2019, December</h3>
+                        <p>Worked as a journalism intern in New Indian Express Cochin as a part of her Journalism Project.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am Irene Mariam Thomas, a Product Documentation Specialist with 2 years of experience in the Supply Chain and Logistics Domain. I hold a Bachelor of Arts Degree in English Literature, Communication, and Journalism from Assumption College Autonomous, Changanacherry, and a Master of Arts Degree in English Literature from Mount Carmel College, Bengaluru. Currently, I am working at Wisetech Global, where I leverage my proficient knowledge in DITA XML and GitHub to create comprehensive product documentation.</p>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <p>Details of my professional experience will be displayed here.</p>
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <p>Bachelor of Arts Degree in English Literature, Communication, and Journalism from Assumption College Autonomous, Changanacherry</p>
-            <p>Master of Arts Degree in English Literature from Mount Carmel College, Bengaluru</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>DITA XML</li>
-                <li>GitHub</li>
-                <!-- Add more skills here -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <p>Samples of my work will be showcased here.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>You can reach me at:</p>
-            <ul>
-                <li>Email: irene@example.com</li>
-                <li>Phone: +1234567890</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/irene-mariam-thomas" target="_blank">Irene Mariam Thomas</a></li>
-                <!-- Add more contact information here -->
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Irene Mariam Thomas. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
